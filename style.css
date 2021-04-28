@@ -1,14 +1,14 @@
 /*
-Theme Name: Mambo theme
-Theme URI: 
-Author: Wilmin josé Sónchez Francisco
+Theme Name: Mambo_theme
+Theme URI: https://www.instagram.com/codevrd/
+Author: Wilmin José Sánchez Francisco
 Author URI: 
 Description: Theme para menú de Mambo Car Wash y Restaurante
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: Restaurant, mobile first, responsive
-Text Domain: mamborestaurante
+Text Domain: mambocafeteria
 */
 
 h1,
@@ -17,100 +17,51 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-weight: 700 !important;
-    color: #f7af0a;
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
-    color: white;
+    font-family: 'PT Sans', sans-serif;
+    margin: 0 !important;
+
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #202020 !important;
+
+    background-color: #ffffff !important;
 }
 
+body.blog {
+    background: url('img/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header */
+
 header.site-header {
-    background-color: black;
+    background-color: #121212;
+    border-bottom: 4px solid #f7af0a;
     height: 90px;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     overflow: hidden;
     box-shadow: 0px 4px 8px -8px;
 
-}
-
-.copyright p {
-    text-transform: uppercase;
-    background-color: #0389c1;
-    height: 30px;
-    font-family: 'Roboto Condensed', sans-serif;
-    color: white;
-    font-size: 11px;
-    margin: 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.site-footer {
-    background-color: black;
-    margin-top: 60px;
-    width: 100%;
-}
-
-.contenido-footer {
-    height: 200px;
-    width: 100%;
-
-}
-
-.caption {
-    padding-left: 10px;
-    margin-top: 10px;
-}
-
-@media only screen and (min-width:480px) {
-    .copyright p {
-        font-size: 16px;
-    }
-
-}
-
-@media only screen and (min-width:992px) {
-    div.logo {
-        margin: 0 40px;
-        width: 50%;
-
-    }
-}
-
-div.logo {
-    line-height: 80px;
-    float: left;
 }
 
 img.custom-logo {
     height: 87px;
 }
 
-.post-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.post-content {
-    display: flex;
-    flex-direction: column;
-    margin: 0px 25px 40px 25px;
-    background: #050505;
-    border-radius: 2px;
-    /* box-shadow: 0px 1px 19px -8px #818181; */
+div.logo {
+    text-align: center;
 }
 
 .contacto {
@@ -135,6 +86,23 @@ img.custom-logo {
     margin-bottom: 0px;
 }
 
+
+
+/* Single post */
+
+
+.post-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.caption {
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
 span.precio {
     font-size: 1.5em;
     color: white;
@@ -142,7 +110,202 @@ span.precio {
     letter-spacing: 2px;
 }
 
-.img img {
-    width: 420px !important;
-    height: 300px !important;
+.single-post-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.post-single-content {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 25px 40px 25px;
+    background: #050505;
+    border-radius: 2px;
+    /* box-shadow: 0px 1px 19px -8px #818181; */
+}
+
+.img-single-post img {
+    width: 100%;
+    height: 600px;
+}
+
+@media (max-width:512px) {
+    .img-single-post img {
+
+        height: 420px;
+    }
+}
+
+.description-article p,
+.description-article {
+    font-family: 'Bad Script', cursive;
+    color: white;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+
+.site-footer {
+    background-color: #121212;
+    border-top: 4px solid #f7af0a;
+    margin-top: 60px;
+    width: 100%;
+}
+
+.contenido-footer {
+    padding: 50px 0 20px 0;
+    height: 420px;
+    text-align: center;
+    width: 100%;
+
+}
+
+@media (min-width:720px) {
+    .contenido-footer {
+        height: 250px;
+        text-align: start;
+
+    }
+}
+
+.copyright p {
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+@media only screen and (min-width:480px) {
+    .copyright p {
+        font-size: 16px;
+    }
+
+}
+
+.social {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social a {
+    color: #747474;
+    font-size: 1.8em;
+    padding-left: 15px
+}
+
+.social a:hover {
+    color: #f7af0a;
+}
+
+.widget-footer h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #f7af0a;
+    font-size: 1.0em;
+    margin-top: 10px;
+}
+
+@media (min-width:720px){
+    .widget-footer h2 {
+        font-size: 1.3em;
+        margin-top: 0px;
+    }
+}
+
+.widget-footer ul {
+    list-style: none;
+}
+
+.widget-footer a {
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+}
+
+.address p {
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+}
+
+/* Menú */
+
+.menu-logo {
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    border: 4px double white;
+    text-transform: uppercase;
+    margin: 20px 0px 80px 0px;
+}
+
+.category {
+    font-family: 'Alex Brush', cursive;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #f7af0a;
+}
+
+.background-menu {
+    background: rgba(0, 0, 0, 0.801);
+    padding: 30px !important;
+}
+
+.menu-content {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.menu-title a,
+.menu-title {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.0em;
+    color: white !important;
+}
+
+@media (min-width:720px){ 
+    .menu-title a,
+    .menu-title {
+        font-size: 1.3em;
+    }
+}
+
+.menu-caption {
+    width: 100%;
+    border-bottom: 2px solid rgb(170, 170, 170);
+}
+
+.menu-description {
+    margin-top: 10px;
+    color: #f7af0a;
+    /* text-shadow: 0px 1px 1px #bcbcbc; */
+    text-align: center;
+}
+
+.menu-description p {
+    font-family: 'Bad Script', cursive;
+}
+
+.menu-price {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 18px;
+}
+
+.cheap-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cheap-content span {
+    font-family: 'Oswald', sans-serif;
+    color: white !important;
+    font-weight: 600 !important;
+    font-size: 1.2em !important;
 }

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.80">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mambo Car Wash</title>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bad+Script&family=Oswald:wght@400;500;600;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
 
 </head>
